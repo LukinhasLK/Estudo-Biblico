@@ -2077,6 +2077,47 @@ body.menu-open .menu-toggle span:last-child {
    HORIZONTAL SCROLL — Profetas
 ═══════════════════════════════════════ */
 
+/* Section header above each horizontal scroll */
+.hscroll-header {
+  background:
+    radial-gradient(ellipse 90% 60% at 50% 100%, rgba(200, 166, 94, 0.13) 0%, transparent 65%),
+    radial-gradient(ellipse 50% 40% at 50% 0%,   rgba(200, 166, 94, 0.06) 0%, transparent 60%),
+    #080c18;
+  padding: 80px clamp(24px, 7vw, 108px) 48px;
+  text-align: center;
+  position: relative;
+}
+
+.hscroll-header-line {
+  width: 1px;
+  height: 52px;
+  background: linear-gradient(to bottom, transparent, rgba(200, 166, 94, 0.55));
+  margin: 0 auto 28px;
+}
+
+.hscroll-header h2 {
+  font-size: clamp(32px, 5.5vw, 68px);
+  color: #ffffff;
+  line-height: 1.05;
+  margin-bottom: 18px;
+}
+
+.hscroll-header-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(14px, 1.3vw, 17px);
+  color: rgba(255, 255, 255, 0.48);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.hscroll-header-bar {
+  width: 48px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, rgba(200, 166, 94, 0.7), transparent);
+  margin: 32px auto 0;
+}
+
 /* Scroll hint label above the section */
 .ps-hint {
   display: flex;

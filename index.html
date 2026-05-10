@@ -3,310 +3,471 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sabor da Palavra | Estudo Biblico</title>
+    <title>Estudo Bíblico | Palavra, Comunhão e Prática</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Encontros simples, profundos e acolhedores para ler a Bíblia com clareza, orar com sinceridade e viver a Palavra durante a semana." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Estudo Bíblico | Palavra, Comunhão e Prática" />
+    <meta property="og:description" content="Encontros simples, profundos e acolhedores para ler a Bíblia com clareza, orar com sinceridade e viver a Palavra durante a semana." />
+    <meta property="og:image" content="assets/estudo-biblico-logo.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/logo-igreja.jpg" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#conteudo-principal">Ir para o conteúdo</a>
+    <div class="scroll-progress" role="progressbar" aria-hidden="true"></div>
+
     <header class="site-header" id="topo">
-      <a class="brand" href="#topo" aria-label="Sabor da Palavra">
-        <span class="brand-icon">SP</span>
-        <span>Sabor da Palavra</span>
+      <a class="brand" href="#topo" aria-label="Estudo Bíblico">
+        <img src="assets/estudo-biblico-logo.jpeg" alt="" />
+        <span>Estudo Bíblico</span>
       </a>
-      <button class="menu-toggle" type="button" aria-label="Abrir menu">
+      <div class="header-church" aria-label="AD Ministério do Belém">
+        <div class="header-church-divider" aria-hidden="true"></div>
+        <img src="assets/logo-igreja.jpg" alt="Logo AD Ministério do Belém São Paulo" />
+      </div>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
         <span></span>
         <span></span>
       </button>
       <nav class="nav-links" aria-label="Menu principal">
         <a href="#sobre">Sobre</a>
-        <a href="#processo">Metodo</a>
-        <a href="#recursos">Recursos</a>
+        <a href="#encontros">Encontros</a>
+        <a href="#trilhas">Trilhas</a>
+        <a href="#profetas">Profetas</a>
+        <a href="#instrumentos">Instrumentos</a>
+        <a href="#personagens">Usados por Deus</a>
         <a href="#contato">Contato</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <span class="float page-one"></span>
-        <span class="float page-two"></span>
-        <span class="float leaf-one"></span>
-        <div class="hero-badge">
-          <span>fundado</span>
-          <strong>+</strong>
-          <span>em 2026</span>
-        </div>
-        <div class="hero-copy">
-          <h1>Estudar a Biblia com sabor e profundidade</h1>
-          <a class="small-pill" href="#recursos">Comecar hoje</a>
-        </div>
-        <a class="scroll-cue" href="#sobre" aria-label="Descer para explorar">
-          <span>rolar para explorar</span>
-          <strong></strong>
-        </a>
-      </section>
-
-      <section class="welcome white-band" id="sobre">
-        <span class="float page-three"></span>
-        <span class="line-art art-left"></span>
-        <span class="line-art art-right"></span>
-        <div class="product-scene">
-          <img
-            class="bible-photo"
-            src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=850&q=80"
-            alt="Biblia aberta em uma mesa"
-          />
-          <div class="study-card">
-            <small>100% estudo guiado</small>
-            <strong>Caderno de Joao</strong>
+    <main id="conteudo-principal">
+      <!-- ── HERO ── -->
+      <section class="hero" aria-labelledby="titulo-principal">
+        <div class="hero-ring" aria-hidden="true"></div>
+        <div class="hero-content">
+          <div class="hero-eyebrow" aria-hidden="true">
+            <span>Palavra acesa no coração</span>
           </div>
-          <div class="cup-note">Leitura<br />Oracao<br />Pratica</div>
-        </div>
-        <div class="welcome-copy">
-          <h2>O melhor estudo para sua rotina com Deus</h2>
-          <p class="subtitle">Estamos aqui para servir voce com a Palavra todos os dias.</p>
-          <p>
-            Estudos simples, profundos e organizados para voce ler, entender e
-            aplicar a Biblia no cotidiano, sozinho ou em grupo.
+          <h1 id="titulo-principal">
+            Aprofunde seu<br /><em>relacionamento</em><br />com Deus
+          </h1>
+          <p class="hero-sub">
+            Encontros simples, profundos e acolhedores para ler a Bíblia com
+            clareza, orar com sinceridade e viver a Palavra durante a semana.
           </p>
-          <div class="owner-speech">
-            <h3>Palavra do mentor</h3>
-            <div class="speaker">
-              <span></span>
-              <img
-                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=220&q=80"
-                alt="Mentor do estudo"
-              />
-              <span></span>
-            </div>
-            <p>"A Palavra ilumina a mente e aquece o coracao."</p>
+          <div class="hero-actions">
+            <a class="primary-button" href="#sobre">Começar estudo</a>
+            <a class="secondary-button" href="#profetas">Estudar Profetas</a>
           </div>
         </div>
+        <div class="hero-scroll-indicator" aria-hidden="true">
+          <div class="hero-scroll-line"></div>
+        </div>
+        <div class="hero-strip" aria-label="Pilares do estudo">
+          <span>Leitura</span>
+          <span>Oração</span>
+          <span>Comunhão</span>
+          <span>Prática</span>
+        </div>
       </section>
 
-      <section class="parchment" id="processo">
-        <span class="sketch sketch-leaf"></span>
-        <span class="sketch sketch-cup"></span>
-        <span class="sketch sketch-arrow"></span>
-        <span class="float page-four"></span>
-        <div class="method-head">
-          <h2>Como voce chega a uma boa leitura da Biblia</h2>
-          <p>Um metodo visual para sair da pressa e entrar no texto.</p>
-          <a class="dark-pill" href="#contato">Falar conosco</a>
+      <!-- ── SOBRE ── -->
+      <section class="intro" id="sobre">
+        <div class="section-copy">
+          <p class="eyebrow">Nosso propósito</p>
+          <h2>A Bíblia no centro, Cristo em tudo, vida transformada.</h2>
+          <p>Contexto, observação e aplicação para cada texto — de forma acessível e profunda.</p>
         </div>
-        <article class="method-item item-one">
-          <h3>Texto no contexto</h3>
-          <p>Veja autor, publico, genero literario e a ideia principal.</p>
-        </article>
-        <article class="method-item item-two">
-          <h3>Observacao cuidadosa</h3>
-          <p>Marque repeticoes, contrastes, promessas e mandamentos.</p>
-        </article>
-        <article class="method-item item-three">
-          <h3>Interpretacao fiel</h3>
-          <p>Conecte cada passagem ao grande plano de Deus em Cristo.</p>
-        </article>
-        <article class="method-item item-four">
-          <h3>Aplicacao diaria</h3>
-          <p>Transforme entendimento em arrependimento, fe e obediencia.</p>
-        </article>
-        <img
-          class="open-book"
-          src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=760&q=80"
-          alt="Livros abertos para estudo"
-        />
+        <div class="intro-grid">
+          <article>
+            <span>01</span>
+            <h3>Entender o texto</h3>
+            <p>Contexto, observação e explicação sem complicar a leitura.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Orar a Palavra</h3>
+            <p>O estudo termina em conversa sincera com Deus.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Caminhar junto</h3>
+            <p>Um ambiente para perguntas, cuidado e crescimento em grupo.</p>
+          </article>
+        </div>
       </section>
 
-      <section class="features white-band">
-        <div class="section-title">
-          <h2>Nossos recursos biblicos</h2>
-          <p>Conteudo preparado para estudo pessoal, celula e discipulado.</p>
-        </div>
-        <div class="feature-orbit">
+      <!-- ── ENCONTROS ── -->
+      <section class="meeting-band" id="encontros">
+        <div class="meeting-image">
           <img
-            class="center-book"
-            src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=620&q=80"
-            alt="Livros de estudo"
+            src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?auto=format&fit=crop&w=1100&q=85"
+            alt="Bíblia aberta durante estudo"
+            loading="lazy"
           />
-          <article class="feature-card feature-one">
-            <span class="feature-icon icon-devotional"></span>
-            <h3>Devocionais guiados</h3>
-            <p>Leituras curtas com pergunta, meditacao e oracao.</p>
+        </div>
+        <div class="meeting-card">
+          <p class="eyebrow">Próximo encontro</p>
+          <h2>Quarta-feira às 20h</h2>
+          <p>
+            Traga sua Bíblia, um caderno e o coração disponível. Cada encontro
+            tem leitura guiada, conversa em grupo e uma aplicação para a semana.
+          </p>
+          <dl>
+            <div><dt>Tema</dt><dd>O evangelho de João</dd></div>
+            <div><dt>Local</dt><dd>Grupo presencial e online</dd></div>
+            <div><dt>Duração</dt><dd>1h15 de estudo</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ── TRILHAS ── -->
+      <section class="paths" id="trilhas">
+        <div class="section-copy centered">
+          <p class="eyebrow">Trilhas de estudo</p>
+          <h2>Escolha por onde começar</h2>
+          <p>Conteúdo preparado para estudo pessoal, célula e discipulado.</p>
+        </div>
+        <div class="path-grid">
+          <article>
+            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=700&q=85" alt="Livro aberto" loading="lazy" />
+            <div>
+              <strong>21 encontros</strong>
+              <h3>João: sinais e vida</h3>
+              <p>Conheça Jesus pelos encontros, discursos e sinais do evangelho.</p>
+            </div>
           </article>
-          <article class="feature-card feature-two">
-            <span class="feature-icon icon-book"></span>
-            <h3>Estudos por livro</h3>
-            <p>Introducao, divisao do texto e aplicacoes principais.</p>
+          <article>
+            <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=700&q=85" alt="Livros abertos para estudo" loading="lazy" />
+            <div>
+              <strong>12 encontros</strong>
+              <h3>Salmos para orar</h3>
+              <p>Aprenda a levar alegria, medo, dor e gratidão diante de Deus.</p>
+            </div>
           </article>
-          <article class="feature-card feature-three">
-            <span class="feature-icon icon-map"></span>
-            <h3>Mapas de contexto</h3>
-            <p>Panorama historico para ler com mais clareza.</p>
-          </article>
-          <article class="feature-card feature-four">
-            <span class="feature-icon icon-group"></span>
-            <h3>Roteiros de grupo</h3>
-            <p>Perguntas prontas para encontros e discipulado.</p>
-          </article>
-          <article class="feature-card feature-five">
-            <span class="feature-icon icon-plan"></span>
-            <h3>Planos semanais</h3>
-            <p>Trilhas de 7, 14 e 30 dias com foco espiritual.</p>
-          </article>
-          <article class="feature-card feature-six">
-            <span class="feature-icon icon-library"></span>
-            <h3>Biblioteca simples</h3>
-            <p>Materiais organizados para voce achar rapido.</p>
+          <article>
+            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=700&q=85" alt="Biblioteca com livros" loading="lazy" />
+            <div>
+              <strong>8 encontros</strong>
+              <h3>Fundamentos da fé</h3>
+              <p>Doutrinas essenciais para uma caminhada firme e madura.</p>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="resource-menu" id="recursos">
-        <div class="menu-hero">
-          <h2>Menu de estudos</h2>
-          <p>Trilhas que alimentam sua fe.</p>
-        </div>
-        <div class="menu-card">
-          <nav class="menu-tabs" aria-label="Categorias de estudos">
-            <button class="active" type="button">Evangelhos</button>
-            <button type="button">Salmos</button>
-            <button type="button">Doutrina</button>
-            <button type="button">Discipulado</button>
-          </nav>
-          <div class="menu-columns">
-            <div>
-              <article>
-                <div>
-                  <h3>Joao em 21 encontros</h3>
-                  <p>Sinais, encontros e discursos de Jesus.</p>
-                </div>
-                <strong>21 dias</strong>
-              </article>
-              <article>
-                <div>
-                  <h3>Marcos para novos discipulos</h3>
-                  <p>O Servo que veio para salvar.</p>
-                </div>
-                <strong>16 dias</strong>
-              </article>
-              <article>
-                <div>
-                  <h3>Lucas e a graca</h3>
-                  <p>Jesus acolhe, chama e transforma.</p>
-                </div>
-                <strong>24 dias</strong>
-              </article>
+      <!-- ── PROFETAS — Horizontal Scroll ── -->
+      <div class="section-copy centered" style="background:var(--navy);padding:72px clamp(18px,7vw,108px) 28px">
+        <p class="eyebrow">Os Profetas</p>
+        <h2>Vozes que anunciaram Cristo</h2>
+      </div>
+      <div class="ps-hint" aria-hidden="true">
+        <span>Deslize para explorar</span>
+        <svg width="30" height="14" viewBox="0 0 30 14" fill="none">
+          <path d="M1 7h28M22 1l7 6-7 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <section class="ps-container" id="profetas" aria-label="Os Profetas da Bíblia">
+        <div class="ps-track">
+
+          <article class="panel-slide ps-panel" style="--accent:#e8693a" aria-label="Elias, ~870 a.C.">
+            <div class="ps-bg"><img class="ps-img" src="assets/elias.png" alt="Elias" loading="lazy" /><div class="ps-overlay"></div></div>
+            <div class="ps-content">
+              <div class="ps-left"><span class="ps-index">01</span><div class="ps-line"></div></div>
+              <div class="ps-right">
+                <p class="ps-date">~870 a.C.</p>
+                <h2 class="ps-name">Elias</h2>
+                <p class="ps-tag">O Profeta de Fogo</p>
+                <p class="ps-desc">Chamou fogo do céu, confrontou o rei Acabe e os 450 profetas de Baal. Foi arrebatado vivo ao céu sem morrer — seu retorno foi profetizado em João Batista.</p>
+                <p class="ps-verse">1 Reis 17–21 · Malaquias 4:5</p>
+              </div>
             </div>
-            <div>
-              <article>
-                <div>
-                  <h3>Sermao do monte</h3>
-                  <p>O Reino moldando carater e pratica.</p>
-                </div>
-                <strong>10 dias</strong>
-              </article>
-              <article>
-                <div>
-                  <h3>Parabolas de Jesus</h3>
-                  <p>Historias que revelam o coracao do Reino.</p>
-                </div>
-                <strong>12 dias</strong>
-              </article>
-              <article>
-                <div>
-                  <h3>A semana da cruz</h3>
-                  <p>Paixao, morte e ressurreicao de Cristo.</p>
-                </div>
-                <strong>8 dias</strong>
-              </article>
+            <div class="ps-counter" aria-hidden="true">01 / 05</div>
+          </article>
+
+          <article class="panel-slide ps-panel" style="--accent:#7bc47f" aria-label="Eliseu, ~850 a.C.">
+            <div class="ps-bg"><img class="ps-img" src="assets/eliseu.png" alt="Eliseu" loading="lazy" /><div class="ps-overlay"></div></div>
+            <div class="ps-content">
+              <div class="ps-left"><span class="ps-index">02</span><div class="ps-line"></div></div>
+              <div class="ps-right">
+                <p class="ps-date">~850 a.C.</p>
+                <h2 class="ps-name">Eliseu</h2>
+                <p class="ps-tag">O Profeta dos Milagres</p>
+                <p class="ps-desc">Sucessor de Elias, realizou o dobro dos milagres do mestre — 16 registrados. Curou Naamã o sírio, ressuscitou mortos e multiplicou óleo para uma viúva endividada.</p>
+                <p class="ps-verse">2 Reis 2–13</p>
+              </div>
             </div>
-          </div>
+            <div class="ps-counter" aria-hidden="true">02 / 05</div>
+          </article>
+
+          <article class="panel-slide ps-panel" style="--accent:#c8a65e" aria-label="Samuel, ~1050 a.C.">
+            <div class="ps-bg"><img class="ps-img" src="assets/samuel.png" alt="Samuel" loading="lazy" /><div class="ps-overlay"></div></div>
+            <div class="ps-content">
+              <div class="ps-left"><span class="ps-index">03</span><div class="ps-line"></div></div>
+              <div class="ps-right">
+                <p class="ps-date">~1050 a.C.</p>
+                <h2 class="ps-name">Samuel</h2>
+                <p class="ps-tag">Juiz, Sacerdote e Profeta</p>
+                <p class="ps-desc">Ungiu Saul e Davi — inaugurou a era monárquica de Israel. Ouviu a voz de Deus desde criança e estabeleceu o padrão da fidelidade à Palavra por toda a sua vida.</p>
+                <p class="ps-verse">1 Samuel 3:20 · Atos 3:24</p>
+              </div>
+            </div>
+            <div class="ps-counter" aria-hidden="true">03 / 05</div>
+          </article>
+
+          <article class="panel-slide ps-panel" style="--accent:#8fb5d4" aria-label="Natã, ~1000 a.C.">
+            <div class="ps-bg"><img class="ps-img" src="assets/nata.png" alt="Natã" loading="lazy" /><div class="ps-overlay"></div></div>
+            <div class="ps-content">
+              <div class="ps-left"><span class="ps-index">04</span><div class="ps-line"></div></div>
+              <div class="ps-right">
+                <p class="ps-date">~1000 a.C.</p>
+                <h2 class="ps-name">Natã</h2>
+                <p class="ps-tag">Profeta da Correção e da Aliança</p>
+                <p class="ps-desc">Confrontou Davi pelo pecado com Bate-Seba com coragem e amor. Anunciou a Aliança Davídica — a promessa de um Rei eterno do trono de Davi, cumprida em Jesus Cristo.</p>
+                <p class="ps-verse">2 Samuel 7 · 2 Samuel 12:1–14</p>
+              </div>
+            </div>
+            <div class="ps-counter" aria-hidden="true">04 / 05</div>
+          </article>
+
+          <article class="panel-slide ps-panel" style="--accent:#c8a65e" aria-label="João Batista, Novo Testamento">
+            <div class="ps-bg"><img class="ps-img" src="assets/joao-batista.png" alt="João Batista" loading="lazy" /><div class="ps-overlay"></div></div>
+            <div class="ps-content">
+              <div class="ps-left"><span class="ps-index">05</span><div class="ps-line"></div></div>
+              <div class="ps-right">
+                <p class="ps-date">Novo Testamento · ~28 d.C.</p>
+                <h2 class="ps-name">João Batista</h2>
+                <p class="ps-tag">A Voz que Clama no Deserto</p>
+                <p class="ps-desc">"Entre os nascidos de mulher não há maior profeta." Preparou o caminho do Senhor, apontou para o Cordeiro de Deus — e então se apagou para que Cristo crescesse.</p>
+                <p class="ps-verse">Isaías 40:3 · Mateus 11:11 · João 1:29</p>
+              </div>
+            </div>
+            <div class="ps-counter" aria-hidden="true">05 / 05</div>
+          </article>
+
         </div>
       </section>
 
-      <section class="library white-band">
-        <div class="library-toolbar">
-          <span>Filtrar por</span>
-          <button type="button">Todos</button>
-          <span>Ordenar por</span>
-          <button type="button">Mais recentes</button>
-          <strong>9 estudos</strong>
+      <!-- ── INSTRUMENTOS DA FÉ ── -->
+      <section class="instruments" id="instrumentos" aria-labelledby="instrumentos-titulo">
+        <div class="section-copy centered">
+          <p class="eyebrow">Usados por Deus</p>
+          <h2 id="instrumentos-titulo">Instrumentos da Fé</h2>
+          <p>Objetos simples nas mãos de Deus se tornaram sinais eternos do Seu poder e amor.</p>
         </div>
-        <div class="study-grid">
+        <div class="instruments-grid">
+          <article class="instrument-card">
+            <div class="instrument-icon icon-staff" aria-hidden="true"><div class="icon-inner"></div></div>
+            <div class="instrument-era">~1350 a.C.</div>
+            <h3>O Cajado de Moisés</h3>
+            <p class="instrument-role">Vara do Poder Divino</p>
+            <p>Um simples bastão de pastor se tornou o instrumento das dez pragas do Egito, da abertura do Mar Vermelho e da água brotada da rocha.</p>
+          </article>
+          <article class="instrument-card">
+            <div class="instrument-icon icon-ark" aria-hidden="true"><div class="icon-inner"></div></div>
+            <div class="instrument-era">~1350 a.C.</div>
+            <h3>A Arca da Aliança</h3>
+            <p class="instrument-role">Morada da Presença de Deus</p>
+            <p>Cofre de madeira coberto de ouro, a Arca guardava as tábuas da Lei, o maná e a vara de Arão. Onde a Arca estava, Deus estava.</p>
+          </article>
+          <article class="instrument-card">
+            <div class="instrument-icon icon-sling" aria-hidden="true"><div class="icon-inner"></div></div>
+            <div class="instrument-era">~1020 a.C.</div>
+            <h3>A Funda de Davi</h3>
+            <p class="instrument-role">Pedra Contra o Gigante</p>
+            <p>Com uma pedra e uma funda, Davi derrubou Golias. Deus escolhe o fraco para envergonhar o poderoso e receber toda a glória.</p>
+          </article>
+          <article class="instrument-card">
+            <div class="instrument-icon icon-cross" aria-hidden="true"><div class="icon-inner"></div></div>
+            <div class="instrument-era">~33 d.C.</div>
+            <h3>A Cruz de Cristo</h3>
+            <p class="instrument-role">Instrumento de Salvação</p>
+            <p>Madeira de vergonha transformada no maior símbolo de amor da história. Na Cruz, Jesus abriu o caminho para a reconciliação com Deus.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ── USADOS POR DEUS — Horizontal Scroll ── -->
+      <div class="section-copy centered" style="background:var(--navy);padding:72px clamp(18px,7vw,108px) 28px">
+        <p class="eyebrow">Figuras Bíblicas</p>
+        <h2>Grandes Personagens da Escritura</h2>
+      </div>
+      <div class="ps-hint" aria-hidden="true">
+        <span>Deslize para explorar</span>
+        <svg width="30" height="14" viewBox="0 0 30 14" fill="none">
+          <path d="M1 7h28M22 1l7 6-7 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <section class="ps-container" id="personagens" aria-label="Usados por Deus">
+        <div class="ps-track">
+
+          <article class="ud-slide ps-panel" style="--accent:#c8a65e" aria-label="Jó, ~2000 a.C.">
+            <div class="ps-bg"><img class="ps-img" src="assets/jo.png" alt="Jó" loading="lazy" /><div class="ps-overlay"></div></div>
+            <div class="ps-content">
+              <div class="ps-left"><span class="ps-index">01</span><div class="ps-line"></div></div>
+              <div class="ps-right">
+                <p class="ps-date">~2000 a.C.</p>
+                <h2 class="ps-name">Jó</h2>
+                <p class="ps-tag">Usado na Dor e na Fé</p>
+                <p class="ps-desc">Íntegro e temente a Deus, Jó perdeu família, bens e saúde — mas não a fé. Deus o usou para revelar que o sofrimento não é abandono, e que a fé verdadeira resiste mesmo sem respostas.</p>
+                <p class="ps-verse">Jó 1–42 · Tiago 5:11</p>
+              </div>
+            </div>
+            <div class="ps-counter" aria-hidden="true">01 / 04</div>
+          </article>
+
+          <article class="ud-slide ps-panel" style="--accent:#e8c878" aria-label="Moisés, ~1350 a.C.">
+            <div class="ps-bg"><img class="ps-img" src="assets/moises.png" alt="Moisés" loading="lazy" /><div class="ps-overlay"></div></div>
+            <div class="ps-content">
+              <div class="ps-left"><span class="ps-index">02</span><div class="ps-line"></div></div>
+              <div class="ps-right">
+                <p class="ps-date">~1350 a.C.</p>
+                <h2 class="ps-name">Moisés</h2>
+                <p class="ps-tag">Usado para Libertar um Povo</p>
+                <p class="ps-desc">Com gagueira e insegurança, Moisés se achava incapaz — mas Deus o usou para libertar Israel do Egito e conduzir o povo pelo deserto por quarenta anos.</p>
+                <p class="ps-verse">Deuteronômio 34:10 · Atos 3:22</p>
+              </div>
+            </div>
+            <div class="ps-counter" aria-hidden="true">02 / 04</div>
+          </article>
+
+          <article class="ud-slide ps-panel" style="--accent:#8fb5d4" aria-label="Davi, ~1000 a.C.">
+            <div class="ps-bg"><img class="ps-img" src="assets/davi.png" alt="Davi" loading="lazy" /><div class="ps-overlay"></div></div>
+            <div class="ps-content">
+              <div class="ps-left"><span class="ps-index">03</span><div class="ps-line"></div></div>
+              <div class="ps-right">
+                <p class="ps-date">~1000 a.C.</p>
+                <h2 class="ps-name">Davi</h2>
+                <p class="ps-tag">Usado no Trono e no Arrependimento</p>
+                <p class="ps-desc">Pastor escolhido por Deus para ser rei, Davi venceu Golias, escreveu os Salmos e foi restaurado pelo arrependimento profundo. É chamado "homem segundo o coração de Deus".</p>
+                <p class="ps-verse">1 Samuel 16:7 · Salmo 51 · Atos 13:22</p>
+              </div>
+            </div>
+            <div class="ps-counter" aria-hidden="true">03 / 04</div>
+          </article>
+
+          <article class="ud-slide ps-panel" style="--accent:#f0e8d0" aria-label="Jesus, ~4 a.C. – 33 d.C.">
+            <div class="ps-bg"><img class="ps-img" src="assets/jesus.png" alt="Jesus" loading="lazy" /><div class="ps-overlay" style="background:linear-gradient(to right,rgba(8,12,24,0.9) 0%,rgba(8,12,24,0.55) 46%,rgba(8,12,24,0.12) 100%),linear-gradient(to bottom,transparent 50%,rgba(8,12,24,0.5) 100%)"></div></div>
+            <div class="ps-content">
+              <div class="ps-left"><span class="ps-index">04</span><div class="ps-line"></div></div>
+              <div class="ps-right">
+                <p class="ps-date">~4 a.C. – 33 d.C.</p>
+                <h2 class="ps-name">Jesus</h2>
+                <p class="ps-tag">O Maior Instrumento de Deus</p>
+                <p class="ps-desc">Não apenas usado por Deus — Jesus é Deus em carne. Nasceu em Belém, entregou-se à Cruz para salvar a humanidade e ressuscitou ao terceiro dia cumprindo toda a Escritura.</p>
+                <p class="ps-verse">João 1:14 · Filipenses 2:6–8 · Hebreus 1:1–2</p>
+              </div>
+            </div>
+            <div class="ps-counter" aria-hidden="true">04 / 04</div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ── VERSÍCULO ── -->
+      <section class="verse-band" aria-label="Versículo de destaque">
+        <p class="verse-ref">Salmo 119:105</p>
+        <blockquote>
+          Lâmpada para os meus pés é a tua palavra, e luz para o meu caminho.
+        </blockquote>
+      </section>
+
+      <!-- ── NÚMEROS ── -->
+      <section class="stats" aria-label="Números do estudo bíblico">
+        <article><strong data-target="3">3</strong><span>trilhas prontas</span></article>
+        <article><strong data-target="41">41</strong><span>encontros guiados</span></article>
+        <article><strong>1</strong><span>propósito em Cristo</span></article>
+      </section>
+
+      <!-- ── MÉTODO ── -->
+      <section class="method">
+        <div class="section-copy">
+          <p class="eyebrow">Nosso método</p>
+          <h2>Uma leitura com fogo, ordem e profundidade.</h2>
+          <p>Abordagem simples, bíblica e aplicável para qualquer texto.</p>
+        </div>
+        <div class="method-list">
+          <article><h3>Observar</h3><p>O que o texto diz?</p></article>
+          <article><h3>Interpretar</h3><p>O que Deus comunica?</p></article>
+          <article><h3>Aplicar</h3><p>Como isso muda minha vida?</p></article>
+          <article><h3>Compartilhar</h3><p>Como sirvo alguém com essa Palavra?</p></article>
+        </div>
+      </section>
+
+      <!-- ── COMO PARTICIPAR ── -->
+      <section class="join-flow" aria-labelledby="participar-titulo">
+        <div class="section-copy">
+          <p class="eyebrow">Como participar</p>
+          <h2 id="participar-titulo">Entre hoje e venha para o próximo estudo.</h2>
+        </div>
+        <div class="join-steps">
           <article>
-            <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?auto=format&fit=crop&w=500&q=80" alt="Livros na biblioteca" />
-            <h3>Romanos essencial</h3>
-            <div><a href="#contato">Estudar</a><strong>14 aulas</strong></div>
+            <span>1</span>
+            <h3>Chame no WhatsApp</h3>
+            <p>Receba local, link online e orientações do encontro.</p>
           </article>
           <article>
-            <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=500&q=80" alt="Biblioteca com livros" />
-            <h3>Salmos de confianca</h3>
-            <div><a href="#contato">Estudar</a><strong>12 aulas</strong></div>
+            <span>2</span>
+            <h3>Traga sua Bíblia</h3>
+            <p>Se puder, venha com um caderno para anotar perguntas e aplicações.</p>
           </article>
           <article>
-            <img src="https://images.unsplash.com/photo-1519682337058-a94d519337bc?auto=format&fit=crop&w=500&q=80" alt="Livro aberto" />
-            <h3>Genesis e alianca</h3>
-            <div><a href="#contato">Estudar</a><strong>18 aulas</strong></div>
-          </article>
-          <article>
-            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=500&q=80" alt="Pilha de livros" />
-            <h3>Oracao no secreto</h3>
-            <div><a href="#contato">Estudar</a><strong>7 aulas</strong></div>
-          </article>
-          <article>
-            <img src="https://images.unsplash.com/photo-1513001900722-370f803f498d?auto=format&fit=crop&w=500&q=80" alt="Caderno de estudo" />
-            <h3>Cartas de Paulo</h3>
-            <div><a href="#contato">Estudar</a><strong>20 aulas</strong></div>
-          </article>
-          <article>
-            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=500&q=80" alt="Prateleira de livros" />
-            <h3>Mulheres da Biblia</h3>
-            <div><a href="#contato">Estudar</a><strong>9 aulas</strong></div>
+            <span>3</span>
+            <h3>Caminhe conosco</h3>
+            <p>Participe das trilhas semanais e cresça em comunhão.</p>
           </article>
         </div>
       </section>
     </main>
 
+    <!-- ── FOOTER ── -->
     <footer class="footer" id="contato">
-      <span class="float page-five"></span>
-      <div class="testimony-row">
-        <figure>
-          <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?auto=format&fit=crop&w=240&q=80" alt="Aluno do estudo" />
-          <h3>Estudo claro!</h3>
-          <p>A leitura ficou organizada e profunda.</p>
-          <figcaption>- Ivo Rocha</figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=240&q=80" alt="Aluna do estudo" />
-          <h3>Muito edificante!</h3>
-          <p>As perguntas ajudam o grupo a conversar melhor.</p>
-          <figcaption>- Ana Lima</figcaption>
-        </figure>
-        <figure>
-          <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=240&q=80" alt="Aluno do estudo" />
-          <h3>Boa direcao!</h3>
-          <p>Voltei a estudar com constancia.</p>
-          <figcaption>- Caio Mendes</figcaption>
-        </figure>
+      <div class="footer-brand">
+        <img src="assets/estudo-biblico-logo.jpeg" alt="Logo do Estudo Bíblico" loading="lazy" />
+        <div>
+          <p class="eyebrow">Fale conosco</p>
+          <h2>Venha estudar a Bíblia com a gente.</h2>
+        </div>
       </div>
-      <div class="footer-contact">
-        <h2>Entre em contato conosco</h2>
-        <p><strong>Endereco:</strong> Rua da Esperanca, 120 - Sao Paulo</p>
-        <p><strong>Telefone:</strong> 55 11 90000-2026</p>
-        <p><strong>Email:</strong> contato@sabordapalavra.com</p>
+      <div class="footer-content">
+        <div class="contact-list">
+          <p><strong>Endereço:</strong> Rua da Esperança, 120 — São Paulo</p>
+          <p><strong>Telefone:</strong> (11) 90000-2026</p>
+          <p><strong>Email:</strong> contato@estudobiblico.com</p>
+        </div>
         <form class="signup">
-          <input type="email" placeholder="seu@email.com" aria-label="Seu email" required />
-          <button type="submit">Receber estudo</button>
+          <label for="email-news">Receba a próxima trilha</label>
+          <div>
+            <input id="email-news" type="email" placeholder="seu@email.com" required />
+            <button type="submit">Enviar</button>
+          </div>
+          <p class="form-message" role="status"></p>
         </form>
-        <p class="form-message" role="status"></p>
       </div>
-      <p class="copyright">Sabor da Palavra. Todos os direitos reservados.</p>
+      <div class="footer-church">
+        <img src="assets/logo-igreja.jpg" alt="Logo AD Ministério do Belém São Paulo" loading="lazy" />
+        <div>
+          <p class="eyebrow">Realização</p>
+          <p class="footer-church-name">AD Ministério do Belém<br />São Paulo</p>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Estudo Bíblico — AD Ministério do Belém. Todos os direitos reservados.</p>
     </footer>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

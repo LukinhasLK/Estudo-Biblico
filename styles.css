@@ -754,6 +754,27 @@ body.menu-open .menu-toggle span:last-child {
   transform: translateY(-6px);
 }
 
+/* Photo wrap */
+.instrument-img-wrap {
+  aspect-ratio: 4 / 3;
+  border-radius: 12px 12px 0 0;
+  margin: -30px -22px 22px;
+  overflow: hidden;
+}
+
+.instrument-img-wrap img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 500ms ease;
+  width: 100%;
+}
+
+.instrument-card:hover .instrument-img-wrap img {
+  transform: scale(1.07);
+}
+
 /* Icon circle */
 .instrument-icon {
   align-items: center;
